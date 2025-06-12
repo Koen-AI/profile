@@ -35,21 +35,19 @@
 						<div class="inner">
 							<h1 class="major">A Generic Page</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p> Multi-agent reinforcement learning (MARL) problems pose significant challenges to temporal
-                                difference (TD) based methods. Evolutionary algorithms (EAs) are optimization algorithms that
-                                can find global optima in multi-dimensional vector spaces. EAs have successfully solved single-agent
-                                RL problems before.
-                                In this thesis, we apply EAs to MARL problems to see if they can deal with the challenges
-                                of MARL problems better than TD methods. To do this we will treat the weights of a neural
-                                network (NN) as a vector and use an EA to search the vector space for a global optimum. We will
-                                evaluate the performance of modular differential evolution (modDE) on the Switch2 and Checkers
-                                environments from ma-gym. We will use value decomposition networks (VDN) and a random
-                                search through the policy space as benchmarks to compare against modDE.
-                                We found that that modDE can solve the Checkers and Switch2 environments. Matching the
-                                near-optimal score of VDN on these environments. However, it does turn out that dimensionality
-                                is a significant limiting factor when applying modDE to MARL problems. This means that modDE
-                                is well suited to solve MARL problems, provided that the dimensionality is small enough or that it
-                                can be reduced by other methods.</p>
+							<p> 
+                                I wrote my Master's thesis about solving multi-agent reinforcement learning problems using an evolutionary algorithm, namely, differential evolution. 
+                                Evolutionary algorithms are optimization algorithms that can find global optima in multi-dimensional vector spaces.
+                                Moreover, evolutionary algorithms have successfully solved single-agent reinforcement learning problems before.
+                                This leads to our research question: Is differential evolution better suited to deal with the challenges of multi-agent reinforcement learning problems than gradient-based reinforcement learning methods?
+                            </p>
+                            <p>
+                                We speculated that evolutionary algorithms would be better at dealing with the following four issues that temporal difference based methods struggle with:
+                                1 Non-stationarity: If one agent changes its policy, the environment changes for all other agents.
+                                2 Credit assignment: To what extend did an agents own actions contribute to a group reward or penalty?
+                                3 Partial observability: An agent may not have access to all information about the state of an environment.
+                                4 Computational complexity: Modeling several agents and updating several policies can increase the computational complexity of MARL problems with respect to RL problems.
+                            </p>
 							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 						</div>
 					</section>
