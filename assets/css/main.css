@@ -2797,7 +2797,7 @@ body.is-ie .spotlights>section {
 .spotlights>section>.image {
     background-position: center center;
     /* background-size: cover; */
-    background-size: auto;
+    background-size: contain;
     border-radius: 0;
     display: block;
     position: relative;
